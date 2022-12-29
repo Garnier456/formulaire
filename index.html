@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version 1 Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <label for="inputName"></label>
+            <input id="inputName" type="text" placeholder="name" pattern="[A-Z][A-Za-z' -]+"/>
+            <small class="small msgName"></small>
+
+            <label for="inputPassword"></label>
+            <input id="inputPassword" type="password" placeholder="password" pattern="^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"/>
+            <small class="small msgPassword"></small>
+
+            <label for="inputEmail"></label>
+            <input id="inputEmail" type="text" placeholder="email address" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
+            <small class="small msgEmail"></small>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+
+      <script src="app.js"></script>
+</body>
+</html>
